@@ -31,7 +31,9 @@ public class ZapparTransformCanvas : MonoBehaviour
             _trackTargetText.text = TransformToString(transform.Current);
         }).AddTo(this);
     }
-
+    private void Update()
+    {
+    }
     private bool CheckTransformChanged((Vector3 position, Quaternion rotation) current, (Vector3 position, Quaternion rotation) previours)
     {
         bool result = false;
